@@ -1,0 +1,104 @@
+
+
+/* keeps page from being the entire width of the browser*/
+body {
+width:90%;
+margin:auto;
+
+}
+
+ /*changes font and text sizeof all paragraphs*/
+p {
+    font-family:"Lora";
+  font-size:16px;
+}
+
+/*ADDS BORDER TO NAVIGATION BAR AT TOP OF PAGE*/
+header  {
+  background-color:#EDD3C4;
+  height:120px;
+  border-color:black;
+  border-width:5px;
+  border-style:solid;
+}
+
+
+
+
+/* DIFFERENT FONT APPLIED TO SUBHEADINGS TO DIFFERENTIATE FROM MAIN HEADING */
+h2,h3 {
+ font-family:"Istok Web";
+  }
+
+
+
+/* main tag is used  for every part of text, so this is the default dimensions and colour for columns unless specified otherwise.*/
+  .border {
+  background-color: #ADD8E6;
+  height:500px;
+  width:50%;
+}
+
+li span {
+  font-size:16px;
+}
+
+#socheader {
+  width:30%;
+  float:left;
+
+  /*TEST BORDER*/
+  /*border-color:black;
+  border-width:1px;
+  border-style:solid;*/
+
+}
+
+#extrainfo {
+  float:right;
+  margin-right:10.8%;
+
+  /*TEST BORDER*/
+  /*border-color:black;
+  border-width:1px;
+  border-style:solid;*/
+}
+
+#accomp1 {
+  float:left;
+  margin-top:10px;
+  font-family:"Istok Web"
+}
+
+
+#accomp2 {
+  float:right;
+  margin-top:10px;
+  font-family:"Istok Web"
+}
+
+
+/*MAY BE REMOVED*/
+/*
+#accomp3 {
+  margin-top:560px;
+  font-family:"Istok Web"
+}
+
+#accomp4 {
+  float:right;
+  margin-top:-500px;
+  font-family:"Istok Web"
+}*/
+
+
+#comp {
+float:right;
+margin-right:18%;
+}
+
+#logo {
+margin-top:60px
+}
+
+}
