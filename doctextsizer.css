@@ -1,0 +1,114 @@
+/*couldn't get p tag to change font size so I put every paragraph tag under the "text" class instead*/
+
+  .xsmallview .text { /*CSS for "extra small font" setting*/
+font-size: 11px;
+}
+
+.smallview .text { /*CSS for "small font" setting*/
+font-size: 13px;
+}
+
+.normalview .text { /*CSS to return page to default setting (with no additional CSS rules added)*/
+font-size:16px;
+}
+
+.largeview .text { /*CSS for "large font" setting*/
+font-size: 21px;
+}
+
+.xlargeview .text { /*CSS for "extra large font" setting*/
+font-size: 24px;
+}
+
+a.texttoggler{ /*CSS for Text Size Toggler control*/
+margin-right: 6px;
+}
+
+a.texttoggler img{ /*CSS for Text Size Toggler control*/
+border: 1px solid gray;
+}
+
+a.texttoggler img:hover{ /*CSS for Text Size Toggler control*/
+border: 1px solid red;
+}
+
+a.selectedtoggler img{ /*CSS for Selected Text Size Toggler control*/
+border: 1px solid red;
+}
+
+#textResizer {
+  float:right;
+  margin-top:80px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

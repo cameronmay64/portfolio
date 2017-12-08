@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <title> Camerons Mays CV Website</title>
-    <!--LINKS TO STYLE SHEET-->
-    <link rel="stylesheet" href="portfolio.css"
-type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Istok+Web" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<style type="text/css"></style>
-<link rel="stylesheet" href="portfolio.css"
-type="text/css">
+ <meta charset="utf-8">
+  <title> Camerons Mays CV Website</title>
+  <!--LINKS TO FONT PAIR-->
+  <link href="https://fonts.googleapis.com/css?family=Istok+Web" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+  <!-- LINK TO BOOTSTRAP FRAMEWORK-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <style type="text/css"></style>
+  <link rel="stylesheet" href="portfolio.css"
+  type="text/css">
+  <!--LINKS TO FONT RESIZER JAVASCRIPT AND STYLE SHEET - CODE START-->
+  <link href="doctextsizer.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="doctextsizer.js">
+  </script>
+  <!--LINKS TO FONT RESIZER JAVASCRIPT AND STYLE SHEET - CODE END-->
+ </meta>
 </head>
 
 
@@ -20,16 +25,24 @@ type="text/css">
 
 
 <header>
+
+   <span id ="textResizer">
+     <!--CODE FOR TEXT RESIZER IMAGES - CODE START-->
+     <a href="#" class="texttoggler" rel="xsmallview" title="extra small size"><img src="xsmallview.png" /></a>
+     <a href="#" class="texttoggler" rel="smallview" title="small size"><img src="smallview.png" /></a>
+     <a href="#" class="texttoggler" rel="normalview" title="normal size"><img src="normalview.png" /></a>
+     <a href="#" class="texttoggler" rel="largeview" title="large size"><img src="largeview.png" /></a>
+     <a href="#" class="texttoggler" rel="xlargeview" title="extra large size"><img src="xlargeview.png" /></a>
+
+     <script type="text/javascript">
+     documenttextsizer.setup("texttoggler")
+    </script>
+  </span>
+    <!--CODE FOR TEXT RESIZER IMAGES - CODE END-->
+    
  <h1>Cameron May</h1>
      <!--NAVIGATION BAR LINK TO OTHER PARTS OF WEBSITE - CODE START-->
     <nav>
-      <!--
-        <ul id = "menu">
-        <li><a href=" Portfolio CV home page.html"> Home</a></li>
-        <li><a href="CV Projects.html"> Projects</a></li>
-        <li><a href="CV Accomplishments.html">Accomplishments</a></li>
-        <li><a href="CV contact.html"><b>Contact me</b></a></li>
-      </ul> -->
       <ul class="nav nav-pills">
           <li><a href="index.html">Home</a></li>
           <li><a href="CV Projects.html">Projects</a></li>
@@ -40,24 +53,21 @@ type="text/css">
     <!--NAVIGATION BAR LINK TO OTHER PARTS OF WEBSITE - CODE END-->
   </header>
 
-<main class = "border">
+<main id="contactborder">
 <h2>Contact Me</h2>
 <contact>
     <!-- HYPERLINK THAT OPENS EMAILS WHEN CLICKED-->
    <p>Email me at <a href=" mailto:1706163@rgu.ac.uk"> my university address</a></p>
- <div id ="headerbox">
     <h3 id ="socheader">Social Media Info</h3>
-   <!-- HYPERLINK TO RGU SITE CONTAINED IN IMAGE - CODE START-->
+    <!--TWITTER CODE START-->
+    <a id="aaa" class="twitter-timeline" data-width="240" data-height="330" href="https://twitter.com/cameronmayrgu?ref_src=twsrc%5Etfw">Tweets by cameronmayrgu</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <!--TWITTER CODE END-->
     <h3 id = "extrainfo">More Information About Computing at RGU</h3>
-
+    <!-- HYPERLINK TO RGU SITE CONTAINED IN IMAGE - CODE START-->
     <a href="http://www.rgu.ac.uk/areas-of-study/subjects/computing/computing-courses/">
-     <img id ="comp" src="computing.png" height="200" width="390" alt="Computing Course Logo">
+     <img id ="comp" src="computing.png" alt="Computing Course Logo">
+    <!-- HYPERLINK TO RGU SITE CONTAINED IN IMAGE - CODE END-->
     </a>
- <!-- HYPERLINK TO RGU SITE CONTAINED IN IMAGE - CODE END-->
- </div>
-   <!--TWITTER CODE START: NOT UNDERNEATH H3 AS TWITTER FEED DOESN'T APPEAR UNDERNEATH IN THAT CASE-->
-       <a class="twitter-timeline" data-width="240" data-height="330"  href="https://twitter.com/cameronmayrgu?ref_src=twsrc%5Etfw">Tweets by cameronmayrgu</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-   <!--TWITTER CODE END-->
 </contact>
 </main class = "border">
 
@@ -66,5 +76,4 @@ type="text/css">
 
 
 </body>
-<footer>(c) 2017 Cameron May</footer>
 </html>

@@ -1,35 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <title> Camerons Mays CV Website</title>
-    <!--LINKS TO FONT PAIR-->
-<link href="https://fonts.googleapis.com/css?family=Istok+Web" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
-<!-- LINK TO BOOTSTRAP FRAMEWORK-->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<style type="text/css"></style>
-<!-- LINK TO STYLE SHEET-->
-<link rel="stylesheet" href="portfolio.css"
-type="text/css">
+ <meta charset="utf-8">
+  <title> Camerons Mays CV Website</title>
+  <!--LINKS TO FONT PAIR-->
+  <link href="https://fonts.googleapis.com/css?family=Istok+Web" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+  <!-- LINK TO BOOTSTRAP FRAMEWORK-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <style type="text/css"></style>
+  <!-- LINK TO STYLE SHEET-->
+  <link rel="stylesheet" href="portfolio.css"
+  type="text/css">
+  <!--LINKS TO FONT RESIZER JAVASCRIPT AND STYLE SHEET - CODE START-->
+  <link href="doctextsizer.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="doctextsizer.js">
+  </script>
+  <!--LINKS TO FONT RESIZER JAVASCRIPT AND STYLE SHEET - CODE END-->
+ </meta>
 </head>
 
 <body>
 
-
-
 <header>
- <h1>Cameron May</h1>
-     <!--NAVIGATION BAR LINK TO OTHER PARTS OF WEBSITE - CODE START-->
+  <span id ="textResizer">
+     <!--CODE FOR TEXT RESIZER IMAGES - CODE START-->
+     <a href="#" class="texttoggler" rel="xsmallview" title="extra small size"><img src="xsmallview.png" /></a>
+     <a href="#" class="texttoggler" rel="smallview" title="small size"><img src="smallview.png" /></a>
+     <a href="#" class="texttoggler" rel="normalview" title="normal size"><img src="normalview.png" /></a>
+     <a href="#" class="texttoggler" rel="largeview" title="large size"><img src="largeview.png" /></a>
+     <a href="#" class="texttoggler" rel="xlargeview" title="extra large size"><img src="xlargeview.png" /></a>
+
+     <script type="text/javascript">
+     documenttextsizer.setup("texttoggler")
+    </script>
+  </span>
+    <!--CODE FOR TEXT RESIZER IMAGES - CODE END-->
+
+ <h1>Cameron May</h1>     <!--NAVIGATION BAR LINK TO OTHER PARTS OF WEBSITE - CODE START-->
     <nav>
-      <!--
-        <ul id = "menu">
-        <li><a href=" Portfolio CV home page.html"><b> Home</b></a></li>
-        <li><a href="CV Projects.html"> Projects</a></li>
-        <li><a href="CV Accomplishments.html">Accomplishments</a></li>
-        <li><a href="CV contact.html">Contact me</a></li>
-      </ul> -->
       <ul class="nav nav-pills">
           <li class="active"><a href="index.html">Home</a></li>
           <li><a href="CV Projects.html">Projects</a></li>
@@ -38,20 +48,25 @@ type="text/css">
       </ul>
     </nav>
      <!--NAVIGATION BAR LINK TO OTHER PARTS OF WEBSITE - CODE END-->
+
 </header>
 
+
+
      <!--MAIN TEXT WITH RELEVANT IMAGE - CODE START-->
-<main class = "border">
     <h2>About Me</h2>
-    <p id = "para1"> I have taken an interest in computers since I can remember and this passion has allowed me to make a career path out of it, studying Cyber Security at RGU.
+
+<main class = "border">
+    <img id ="codeImage" src="code.jpg" alt="picture of computer code">
+    <p class="text" id="smallWidthText"> I have taken an interest in computers since I can remember and this passion has allowed me to make a career path out of it, studying Cyber Security at RGU.
      A student with a desire to learn and a positive attitude, I go the extra mile in all activities I partake in, joining extra-curricular groups and finding out as much
      about the industry as I can. I would dedicate everything I can to producing the best work possible at your company if employed, and this website shall display my experience and employability.
-    </p>
-    <img src="Homepage Image.jpg" width = "400"height="300" alt="Cyber Security Logo">
+   </p> <br>
+    <img id ="cyberSecurityLogo" src="Homepage Image.jpg" width = "400"height="300" alt="Cyber Security Logo">
+    <p class="text" id="smallWidthText">Even in my brief time learning about computing through my degree I have learnt a lot about HTML, CSS, javascript and the accessibility required to create a website that works for everything. My Degree
+    has allowed me to learn about varied aspects of computing and this broad knowledge should come in handy for employers by the end of my degree in 4/5 years, helping me find security flaws in code easier due to proficiency in javascript, java and HTML to name a few languages.</p>
 </main class = "border">
      <!--MAIN TEXT WITH RELEVANT IMAGE - CODE END-->
-
   </body>
 
-  <footer>(c) 2017 Cameron May</footer>
 </html>

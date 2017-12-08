@@ -1,16 +1,25 @@
 
-
 /* keeps page from being the entire width of the browser*/
 body {
-width:90%;
-margin:auto;
-
+ width:90%;
+ margin:auto;
+ /*ADDS BACKGROUND COLOUR TO PAGE*/
+ background-color:#EFF7CF;
 }
 
- /*changes font and text sizeof all paragraphs*/
+ /*changes font and text sizeof all paragraphs to improve readability. */
 p {
-    font-family:"Lora";
-  font-size:16px;
+ font-family:"Lora";
+ font-size:16px;
+ /* Spacing between text stops it from looking squished together, gives cleaner result*/
+ word-spacing: 3px;
+ /*makes text start just after the sides of border, looks nicer this way*/
+ margin-left:3px;
+}
+
+/*stops text on index page going across enter border*/
+#smallWidthText {
+width:60%;
 }
 
 /*ADDS BORDER TO NAVIGATION BAR AT TOP OF PAGE*/
@@ -21,22 +30,45 @@ header  {
   border-width:5px;
   border-style:solid;
 }
-
-
+}
 
 
 /* DIFFERENT FONT APPLIED TO SUBHEADINGS TO DIFFERENTIATE FROM MAIN HEADING */
-h2,h3 {
+h1,h3 {
  font-family:"Istok Web";
   }
 
+ h2 {
+  font-size:30px;
+  font-family:"Myriad Pro";
+ }
 
+ /*postions arduino title on the 'CV project' page next to youtube video*/
+ #arduinotitle {
+  font-size:60px;
+  padding:10px;
+
+ }
+
+ #projectborder {
+  background-color: #ADD8E6;
+  height:700px;
+  width:70%;
+}
 
 /* main tag is used  for every part of text, so this is the default dimensions and colour for columns unless specified otherwise.*/
   .border {
   background-color: #ADD8E6;
-  height:500px;
-  width:50%;
+  /*height and width 100% allow for responsiveness when scaling*/
+  height:100%;
+  width:90%;
+}
+
+#contactborder {
+  background-color: #ADD8E6;
+  /*height and width 100% allow for responsiveness when scaling*/
+  height:100%;
+  width:80%;
 }
 
 li span {
@@ -45,60 +77,62 @@ li span {
 
 #socheader {
   width:30%;
-  float:left;
-
+}
   /*TEST BORDER*/
   /*border-color:black;
   border-width:1px;
   border-style:solid;*/
 
+#arduinoVideo {
+margin-left:150px;
 }
 
-#extrainfo {
-  float:right;
-  margin-right:10.8%;
 
-  /*TEST BORDER*/
-  /*border-color:black;
-  border-width:1px;
-  border-style:solid;*/
-}
-
-#accomp1 {
+#accomplishments {
   float:left;
   margin-top:10px;
   font-family:"Istok Web"
 }
 
 
-#accomp2 {
-  float:right;
-  margin-top:10px;
-  font-family:"Istok Web"
+#projectsheader {
+margin-left:50px;
+padding-top:5px;
+font-size:40px;
 }
 
 
-/*MAY BE REMOVED*/
-/*
-#accomp3 {
-  margin-top:560px;
-  font-family:"Istok Web"
+
+/*CSS FOR ALL IMAGES*/
+
+#codeImage {
+ margin-top:10px;
+ width:25%;
 }
-
-#accomp4 {
-  float:right;
-  margin-top:-500px;
-  font-family:"Istok Web"
-}*/
-
 
 #comp {
-float:right;
-margin-right:18%;
+margin-bottom:20px;
+width:30%;
 }
 
-#logo {
-margin-top:60px
+/*AUTO HEIGHT AND WIDTH AS PERCENTAGE ALLOWS FOR SCALING ON DIFFERENT DEVICES*/
+#DOElogo {
+ margin-top:20px;
+ height:auto;
+ width:30%;
+}
+
+/*AUTO HEIGHT AND WIDTH AS PERCENTAGE ALLOWS FOR SCALING ON DIFFERENT DEVICES*/
+#cyberSecurityLogo {
+height:auto;
+width:25%;
+}
+
+/*AUTO HEIGHT AND WIDTH AS PERCENTAGE ALLOWS FOR SCALING ON DIFFERENT DEVICES*/
+#childsplaylogo {
+ margin-top:20px;
+ height:auto;
+ width:25%;
 }
 
 }
